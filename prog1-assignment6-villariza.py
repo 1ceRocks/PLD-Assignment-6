@@ -131,10 +131,10 @@ try:
     """
     Whenever a user inputs an alphabetical/alphanumeric in the string, it will automatically direct into the except function program.
     """
-    num1 = float(input("\nEnter the \33[36;1mFIRST (1ST)\33[0m number here. \n\033[32;1m> "))
-    num2 = float(input("\n\033[0mEnter the \33[36;1mSECOND (2ND)\33[0m number here. \n\033[32;1m> "))
-    num3 = float(input("\n\033[0mEnter the \33[36;1mTHIRD (3RD)\33[0m number here. \n\033[32;1m> "))
-    num4 = float(input("\n\033[0mEnter the \33[36;1mFOURTH (4TH)\33[0m number here. \n\033[32;1m> "))
+    num1 = float(input("\nEnter the \33[36;1mFIRST (1ST)\33[0m number here. \n\033[32;1m>>> "))
+    num2 = float(input("\n\033[0mEnter the \33[36;1mSECOND (2ND)\33[0m number here. \n\033[32;1m>>> "))
+    num3 = float(input("\n\033[0mEnter the \33[36;1mTHIRD (3RD)\33[0m number here. \n\033[32;1m>>> "))
+    num4 = float(input("\n\033[0mEnter the \33[36;1mFOURTH (4TH)\33[0m number here. \n\033[32;1m>>> "))
     top_number(num1, num2, num3, num4)
 # ValueError entails an inappropriate argument value (of correct type) so that it is utilized.
 except ValueError as alpha:
