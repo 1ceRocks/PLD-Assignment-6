@@ -12,9 +12,9 @@ infMax = 1 # Maximum Information (User Item Input) = Store Global Variable
 correct_ans = 0 # Correct Answers of a User = Store Global Variable
 wrong_ans = 0 # Wrong Answers of a User = Store Global Variable
 maxItems = 10 # The Total Items for the Quiz (Fixed Numerical Int)
-prog_preface = print("\nWelcome to Villariza Math Quiz! \nAbout: This is a ten (10) question mathematical addition item that will probably test your brain between random digits ranging from 0-99!")
-user_name = input("\nBefore we proceed, please enter your name down below. \n>>> ")
-verReady = input(f"\nHi {user_name.title()}!\nAre you ready for the Math Quiz? (Respond: Yes or No)\n>>> ") # To Verify if the User is Ready or Not.
+prog_preface = print("\nWelcome to \33[36;1mVillariza\33[0m \033[32;1mMath Quiz\33[0m! \nThis is a \033[32;1m\x1B[3mten (10) question mathematical addition item\x1B[0m that will probably test your brain between \33[34;1mrandom digits\33[0m ranging from \033[33;1m0-99!\033[0m")
+user_name = input("\nBefore we proceed, please enter your \033[31;1mNAME\33[0m down\33[0m below. \n\033[31;1m>>> ")
+verReady = input(f"\n\033[0mHi \033[31;1m{user_name.title()}\33[0m!\nAre you ready for the \033[32;1mMath Quiz\33[0m? (Respond: \33[34;1mYes\33[0m or \33[34;1mNo\33[0m)\n\033[32;1m>>>\33[0m\33[34;1m ") # To Verify if the User is Ready or Not.
 ready = False
 
 # While Condition Statement is added in able for Python to Communicate on User Lively.
@@ -24,7 +24,7 @@ while not ready:
         ready = True
     while verReady.replace(".","",10).title() != "Yes":
         if verReady.replace(".","",10).title() or verReady.replace("!","",10).title() == "No":
-            verReady = input(f"\nSure indeed, I will give you a plenty of time to take a deep breath. 😇\nAre you now ready for the Math Quiz? (Respond: Yes or No)\n>>> ")
+            verReady = input(f"\n\033[0mSure indeed, I will give you a plenty of time to take a deep breath. 😇\nAre you now ready for the \033[32;1mMath Quiz\33[0m? (Respond: \33[34;1mYes\33[0m or \33[34;1mNo\33[0m)\n\033[32;1m>>>\33[0m\33[34;1m ")
             if verReady.replace(".","",10).title() == "No" or verReady.replace("!","",10).title() == "No":
                 verReady = "No"
                 break
@@ -32,9 +32,9 @@ while not ready:
                 verReady = "Yes"
                 break
             while verReady.replace(".","",10).title() != "Yes":
-                verReady = input(f"\nPython 3.0 didn't understand your response, apologies! ☹️\nAre you now ready for the Math Quiz? (Respond: Yes or No)\n>>> ")
+                verReady = input(f"\n\033[0mPython 3.0 didn't understand your response, apologies! ☹️\nAre you now ready for the \033[32;1mMath Quiz\33[0m? (Respond: \33[34;1mYes\33[0m or \33[34;1mNo\33[0m)\n\033[32;1m>>>\33[0m\33[34;1m ")
                 if verReady.upper() in "BCDFGHJKLMNPQRSTVWXYZAEIOU":
-                    verReady = input(f"\nPython 3.0 didn't understand your response, apologies! ☹️\nAre you now ready for the Math Quiz? (Respond: Yes or No)\n>>> ")
+                    verReady = input(f"\n\033[0mPython 3.0 didn't understand your response, apologies! ☹️\nAre you now ready for the \033[32;1mMath Quiz\33[0m? (Respond: \33[34;1mYes\33[0m or \33[34;1mNo\33[0m)\n\033[32;1m>>>\33[0m\33[34;1m ")
                 elif verReady.replace(".","",10).title() == "No" or verReady.replace("!","",10).title() == "No":
                     verReady = "No"
                     break
@@ -44,9 +44,9 @@ while not ready:
                 else:
                     verReady = "C"
         else:
-            verReady = input(f"\nPython 3.0 didn't understand your response, apologies! ☹️\nAre you now ready for the Math Quiz? (Respond: Yes or No)\n>>> ")
+            verReady = input(f"\n\033[0mPython 3.0 didn't understand your response, apologies! ☹️\nAre you now ready for the \033[32;1mMath Quiz\33[0m? (Respond: \33[34;1mYes\33[0m or \33[34;1mNo\33[0m)\n\033[32;1m>>>\33[0m\33[34;1m ")
             if verReady.upper() in "BCDFGHJKLMNPQRSTVWXYZAEIOU":
-                verReady = input(f"\nPython 3.0 didn't understand your response, apologies! ☹️\nAre you now ready for the Math Quiz? (Respond: Yes or No)\n>>> ")
+                verReady = input(f"\n\033[0mPython 3.0 didn't understand your response, apologies! ☹️\nAre you now ready for the \033[32;1mMath Quiz\33[0m? (Respond: \33[34;1mYes\33[0m or \33[34;1mNo\33[0m)\n\033[32;1m>>>\33[0m\33[34;1m ")
             elif verReady.replace(".","",10).title() == "No" or verReady.replace("!","",10).title() == "No":
                 verReady = "No"
                 break
@@ -56,9 +56,9 @@ while not ready:
             else:
                 verReady = "C"
 
-print(f"\nOkay {user_name}, let us now begin! Always take note that, \n\x1B[3mIf you fail to prepare, you are prepared to fail. - Benjamin Franklin\x1B[0m")
+print(f"\n\033[0mOkay \033[31;1m{user_name.title()}\033[0m, let us now begin! Always take note that, \n\x1B[3mIf you fail to prepare, you are prepared to fail. - Benjamin Franklin\x1B[0m")
 
-# Only Mathematical Operator = "+" will be used on this program as the interface of Villariza Math Quiz.
+# Only Mathematical Operator = "+" will be used on this program as the interface of Villariza \033[32;1mMath Quiz\33[0m.
 while infMax <= maxItems:
     """
     LOCAL SPECIAL VARIABLE INPUT-STORE STRING FUNCTION.
@@ -66,10 +66,13 @@ while infMax <= maxItems:
     quan1 = randrange(0,99) # quan1 (Abbreviated = Quantity 1) < Special Local Variable
     quan2 = randrange(0,99) # quan2 (Abbreviated = Quantity 2) < Special Local Variable
     prog_ans = quan1 + quan2 # prog_ans (Abberviated = ) < Special Local Variable (MATHEMATICAL OPERATOR = ADDITION)
-    print(f"\nItem No.{infMax} out of {maxItems}. \nWhat's {quan1} + {quan2}?")
-    userResponse = input("\nYour Answer \n>>> ") # First Issue (User Input as Answer)
+    if infMax < maxItems:
+        print(f"\n\033[0mItem No.\033[36;1m{infMax}\033[0m out of \033[34;1m{maxItems}\033[0m. \nWhat's \033[32;1m{quan1}\033[0m + \033[32;1m{quan2}\033[0m?")
+    elif infMax == maxItems:
+        print(f"\n\033[0mItem No.\033[34;1m{infMax}\033[0m out of \033[34;1m{maxItems}\033[0m. \nWhat's \033[32;1m{quan1}\033[0m + \033[32;1m{quan2}\033[0m?")
+    userResponse = input("\nYour Answer \n\033[31;1m>>>\33[0m\033[32m ") # First Issue (User Input as Answer)
     if userResponse.isalpha() == True: # Second Issue (If User Input is Alphabet)
-        print("The program says that you should provide a numerical input. \nPlease try again. That answer would not be counted as an increment of your total item quiz.")
+        print("\033[0mThe program says that you should provide a \033[32;1mnumerical input\033[0m. Please try again. \nThat answer \033[32;1m\x1B[3mwould\x1B[0m not be counted as an \033[32;1m\x1B[3mincrement\x1B[0m of your \033[34;1mtotal item quiz\033[0m.")
     elif userResponse.isdigit() == True: # Third Issue (If User Input is Digit)
         """
         LIVE QUIZ PROGRAM CODE (USING IF-ELIF CODE BLOCK(S) IN WHILE STATEMENT).
@@ -80,34 +83,34 @@ while infMax <= maxItems:
             if correct_ans == 10:
                 print(f"")
             elif correct_ans >= 8 or correct_ans == 9:
-                print(f"\nSuperb! Very consistent indeed!")
+                print(f"\n\033[0mSuperb! \33[32;1mVery consistent\033[0m indeed!")
             elif correct_ans >= 5 or correct_ans == 7:
-                print(f"\nYou are still right! Keep it up!")
+                print(f"\n\033[0mYou are \33[32;1mstill right!\033[0m Keep it up!")
             elif correct_ans >= 1 or correct_ans == 4:
-                print(f"\nYou are correct!")
+                print(f"\n\033[0mYou are \33[32;1mcorrect!\033[0m")
         elif int(userResponse) != prog_ans: # Count Wrong Answers
             wrong_ans += 1
             infMax += 1
             if wrong_ans == 10:
                 print(f"")
             elif wrong_ans >= 8 or wrong_ans == 9:
-                print(f"\nYou are still wrong! Think more!")
+                print(f"\n\033[0mYou are \033[31;1mstill wrong\033[0m! Think more!")
             elif wrong_ans >= 5 or wrong_ans == 7:
-                print(f"\nYou are wrong! But you can still do it!")
+                print(f"\n\033[0mYou are \033[31;1mwrong\033[0m! But you can still do it!")
             elif wrong_ans >= 1 or wrong_ans == 4:
-                print(f"Incorrect 🙁")
+                print(f"\n\033[0m\033[31;1mIncorrect\033[0m 🙁")
     elif userResponse.isalnum() == True: # Fourth Issue (If User Input is Alpha-Numeric)
         """
         TOTAL ITEM QUIZ NOT COUNTED IF ANOTHER INPUT IS ENCODED BY A USER (USING ELIF STATEMENT).
         """
-        print("The program says that you should provide a numerical input. Please try again. \nThat answer would not be counted as an increment of your total item quiz.")
+        print("\033[0mThe program says that you should provide a \033[32;1mnumerical input\033[0m. Please try again. \nThat answer \033[32;1m\x1B[3mwould\x1B[0m not be counted as an \033[32;1m\x1B[3mincrement\x1B[0m of your \033[34;1mtotal item quiz\033[0m.")
 
 # SUMMARY OF SCORES , EVALUATION , AND ADDITIONAL COMMENTS FOR MORE INTERACTIVE RESPONSE.
 if correct_ans >= 10 and wrong_ans == 0:
-    print(f"\nThe summary of your grades would be: {correct_ans} / {maxItems}.\nYou've got a perfect score!\n")
+    print(f"\n\033[0mThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mYou've got a perfect score!\033[0m\n")
 elif correct_ans >= 5 or correct_ans == 9 and wrong_ans >= 1:
-    print(f"\nThe summary of your grades would be: {correct_ans} / {maxItems}.\nYou still did your best!\n")
+    print(f"\n\033[0mThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mYou still did your best!\033[0m\n")
 elif correct_ans >= 1 or correct_ans == 4 and wrong_ans >= 1:
-    print(f"\nThe summary of your grades would be: {correct_ans} / {maxItems}.\nNice try! But you still need to practice more, okay?\n")
+    print(f"\n\033[0mThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mNice try! But you still need to practice more, okay?\033[0m\n")
 elif correct_ans == 0 and wrong_ans >= 1:
-    print(f"\nThe summary of your grades would be: {correct_ans} / {maxItems}.\nDo not worry, at least you have tried!\n")
+    print(f"\n\033[0mThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mDo not worry, at least you have tried!\033[0m\n")
