@@ -3,7 +3,7 @@
 # Print the 4 numbers from highest to lowest using only if-else statement.
 
 # Program inception for the clarification of this system program.
-print("\nIn this \033[34;1mPython\033[0m \033[1m3.0\033[0m \033[33;1mLanguage\033[0m, the program will identify the inputted digits or values from \033[32;1m\x1B[ascending to descending order\x1B[0m between the \033[32;1mfour (4) statements\033[0m enclosed on a square bracket.")
+print("\nIn this \033[34;1mPython\033[0m \033[1m3.0\033[0m \033[33;1mLanguage\033[0m, the program will identify the inputted digits or values from \033[32;1m\x1B[3mascending to descending order\x1B[0m between the \033[32;1mfour (4) statements\033[0m enclosed on a square bracket.")
 
 # Informing the user that float string numericals (with decimal places and digits) are supported.
 print("\n\033[32;1mFLOAT STRING Numericals\033[0m are supported.")
