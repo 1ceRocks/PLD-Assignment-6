@@ -6,92 +6,92 @@ print("\nIn this \033[34;1mPython\033[0m \033[1m3.0\033[0m \033[33;1mLanguage\03
 print("\n\033[32;1mFLOAT STRING Numericals\033[0m are supported.")
 
 def top_number(quan1, quan2, quan3, quan4):
-    if quan1 > quan2 and quan1 > quan3 and quan1 > quan4:
-        if quan2 > quan3 and quan2 > quan4:
-            if quan3 > quan4:
+    if quan1 >= quan2 and quan1 >= quan3 and quan1 >= quan4:
+        if quan2 >= quan3 and quan2 >= quan4:
+            if quan3 >= quan4:
                 order_num = [quan1, quan2, quan3, quan4]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan4 > quan3:
+            elif quan4 >= quan3:
                 order_num = [quan1, quan2, quan4, quan3]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-        elif quan3 > quan2 and quan3 > quan4:
-            if quan2 > quan4:
+        elif quan3 >= quan2 and quan3 >= quan4:
+            if quan2 >= quan4:
                 order_num = [quan1, quan3, quan2, quan4]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan4 > quan2:
+            elif quan4 >= quan2:
                 order_num = [quan1, quan3, quan4, quan2]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-        elif quan4 > quan2 and quan4 > quan3:
-            if quan3 > quan2:
+        elif quan4 >= quan2 and quan4 >= quan3:
+            if quan3 >= quan2:
                 order_num = [quan1, quan4, quan3, quan2]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan2 > quan3:
+            elif quan2 >= quan3:
                 order_num = [quan1, quan4, quan2, quan3]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-    elif quan2 > quan1 and quan2 > quan3 and quan2 > quan4:
-        if quan1 > quan3 and quan1 > quan4:
-            if quan3 > quan4:
+    elif quan2 >= quan1 and quan2 >= quan3 and quan2 >= quan4:
+        if quan1 >= quan3 and quan1 >= quan4:
+            if quan3 >= quan4:
                 order_num = [quan2, quan1, quan3, quan4]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan4 > quan3:
+            elif quan4 >= quan3:
                 order_num = [quan2, quan1, quan4, quan3]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-        elif quan3 > quan1 and quan3 > quan4:
-            if quan1 > quan4:
+        elif quan3 >= quan1 and quan3 >= quan4:
+            if quan1 >= quan4:
                 order_num = [quan2, quan3, quan1, quan4]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan4 > quan1:
+            elif quan4 >= quan1:
                 order_num = [quan2, quan3, quan4, quan1]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-        elif quan4 > quan1 and quan4 > quan3:
-            if quan1 > quan3:
+        elif quan4 >= quan1 and quan4 >= quan3:
+            if quan1 >= quan3:
                 order_num = [quan2, quan4, quan1, quan3]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan3 > quan1:
+            elif quan3 >= quan1:
                 order_num = [quan2, quan4, quan3, quan1]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-    elif quan3 > quan1 and quan3 > quan2 and quan3 > quan4:
-        if quan1 > quan2 and quan1 > quan4:
-            if quan2 > quan4:
+    elif quan3 >= quan1 and quan3 >= quan2 and quan3 >= quan4:
+        if quan1 >= quan2 and quan1 >= quan4:
+            if quan2 >= quan4:
                 order_num = [quan3, quan1, quan2, quan4]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan4 > quan2:
+            elif quan4 >= quan2:
                 order_num = [quan3, quan1, quan4, quan2]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-        elif quan2 > quan1 and quan2 > quan4:
-            if quan1 > quan4:
+        elif quan2 >= quan1 and quan2 >= quan4:
+            if quan1 >= quan4:
                 order_num = [quan3, quan2, quan1, quan4]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[ascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan4 > quan1:
+            elif quan4 >= quan1:
                 order_num = [quan3, quan2, quan4, quan1]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-        elif quan4 > quan1 and quan4 > quan2:
-            if quan1 > quan2:
+        elif quan4 >= quan1 and quan4 >= quan2:
+            if quan1 >= quan2:
                 order_num = [quan3, quan4, quan1, quan2]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan2 > quan1:
+            elif quan2 >= quan1:
                 order_num = [quan3, quan4, quan2, quan1]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-    elif quan4 > quan1 and quan4 > quan2 and quan4 > quan3:
-        if quan1 > quan2 and quan1 > quan3:
-            if quan2 > quan3:
+    elif quan4 >= quan1 and quan4 >= quan2 and quan4 >= quan3:
+        if quan1 >= quan2 and quan1 >= quan3:
+            if quan2 >= quan3:
                 order_num = [quan4, quan1, quan2, quan3]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan3 > quan2:
+            elif quan3 >= quan2:
                 order_num = [quan4, quan1, quan3, quan2]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-        elif quan2 > quan1 and quan2 > quan3:
-            if quan1 > quan3:
+        elif quan2 >= quan1 and quan2 >= quan3:
+            if quan1 >= quan3:
                 order_num = [quan4, quan2, quan1, quan3]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan3 > quan1:
+            elif quan3 >= quan1:
                 order_num = [quan4, quan2, quan3, quan1]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-        elif quan3 > quan1 and quan3 > quan2:
-            if quan1 > quan2:
+        elif quan3 >= quan1 and quan3 >= quan2:
+            if quan1 >= quan2:
                 order_num = [quan4, quan3, quan1, quan2]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")
-            elif quan2 > quan1:
+            elif quan2 >= quan1:
                 order_num = [quan4, quan3, quan2, quan1]
                 print(f"\n\033[0mThe following list is in \033[32;1m\x1B[3mascending to descending\x1B[0m order.\n\33[34;1m{order_num}\33[0m\n")         
 
