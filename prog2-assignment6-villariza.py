@@ -24,7 +24,7 @@ while not ready:
         verReady = "Yes"
         ready = True
     while verReady.replace(".","",10).title() != "Yes":
-        if verReady.replace(".","",10).title() or verReady.replace("!","",10).title() == "No":
+        if verReady.replace(".","",10).title() == "No" or verReady.replace("!","",10).title() == "No":
             verReady = input(f"\n\033[0mSure indeed, I will give you a plenty of time to take a deep breath. 😇\nAre you now ready for the \033[32;1mMath Quiz\33[0m? (Respond: \33[34;1mYes\33[0m or \33[34;1mNo\33[0m)\n\033[32;1m>>>\33[0m\33[34;1m ")
             if verReady.replace(".","",10).title() == "No" or verReady.replace("!","",10).title() == "No":
                 verReady = "No"
