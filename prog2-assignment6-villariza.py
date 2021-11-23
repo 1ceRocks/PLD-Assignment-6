@@ -4,6 +4,10 @@
 # The program will ask the user 10 addition operation
 # Display the result summary of the 10 operations (ex 9/10)
 
+"""
+(11/23/2021) UPDATE : Appended a dash (-) line for a splendid character terminal output.
+"""
+
 # The module 'random' will be used as a randrage import on this program.
 from random import randrange
 import math
@@ -68,15 +72,15 @@ while infMax <= maxItems:
     quan2 = randrange(0,99) # quan2 (Abbreviated = Quantity 2) < Special Local Variable
     prog_ans = quan1 + quan2 # prog_ans (Abberviated = ) < Special Local Variable (MATHEMATICAL OPERATOR = ADDITION)
     if infMax < maxItems:
-        print(f"\n\033[0mItem No.\033[36;1m{infMax}\033[0m out of \033[34;1m{maxItems}\033[0m. \nWhat's \033[32;1m{quan1}\033[0m + \033[32;1m{quan2}\033[0m?")
+        print(f"\n\033[0m\033[31;1m-------------------------------------------- \033[0m\nItem No.\033[36;1m{infMax}\033[0m out of \033[34;1m{maxItems}\033[0m. \nWhat's \033[32;1m{quan1}\033[0m + \033[32;1m{quan2}\033[0m?")
     elif infMax == maxItems:
-        print(f"\n\033[0mItem No.\033[34;1m{infMax}\033[0m out of \033[34;1m{maxItems}\033[0m. \nWhat's \033[32;1m{quan1}\033[0m + \033[32;1m{quan2}\033[0m?")
+        print(f"\n\033[0m\033[31;1m-------------------------------------------- \033[0m\nItem No.\033[34;1m{infMax}\033[0m out of \033[34;1m{maxItems}\033[0m. \nWhat's \033[32;1m{quan1}\033[0m + \033[32;1m{quan2}\033[0m?")
     userResponse = input("\nYour Answer \n\033[31;1m>>>\33[0m\033[32m ") # First Issue (User Input as Answer)
     if userResponse.isalpha() == True: # Second Issue (If User Input is Alphabet)
         """
         TOTAL ITEM QUIZ NOT COUNTED IF ANOTHER INPUT IS ENCODED BY A USER (USING IF STATEMENT).
         """
-        print("\033[0mThe program says that you should provide a \033[32;1mnumerical input\033[0m. Please try again. \nThat answer \033[31;1m\x1B[3mwould not\x1B[0m be counted as an \033[32;1m\x1B[3mincrement\x1B[0m of your \033[34;1mtotal item quiz\033[0m.")
+        print("\033[0mThe program says that you should provide a \033[32;1mnumerical input\033[0m. Please try again. \nThat answer \033[31;1m\x1B[3mwould not\x1B[0m be counted as an \033[32;1m\x1B[3mincrement\x1B[0m of your \033[34;1mtotal item quiz\033[0m.\n\033[31;1m-------------------------------------------- \033[0m")
     elif userResponse.isdigit() == True: # Third Issue (If User Input is Digit)
         """
         LIVE QUIZ PROGRAM CODE (USING IF-ELIF CODE BLOCK(S) IN WHILE STATEMENT).
@@ -87,39 +91,39 @@ while infMax <= maxItems:
             if correct_ans == 10:
                 None
             elif correct_ans >= 8 or correct_ans == 9:
-                print(f"\n\033[0mSuperb! \33[32;1mVery consistent\033[0m indeed!")
+                print(f"\n\033[0mSuperb! \33[31;1mVery consistent\033[0m indeed!\n\033[33;1m-------------------------------------------- \033[0m")
             elif correct_ans >= 5 or correct_ans == 7:
-                print(f"\n\033[0mYou are \33[32;1mstill right!\033[0m Keep it up!")
+                print(f"\n\033[0mYou are \33[31;1mstill right!\033[0m Keep it up!\n\033[33;1m-------------------------------------------- \033[0m")
             elif correct_ans >= 1 or correct_ans == 4:
-                print(f"\n\033[0mYou are \33[32;1mcorrect!\033[0m")
+                print(f"\n\033[0mYou are \33[31;1mcorrect!\033[0m\n\033[33;1m-------------------------------------------- \033[0m")
         elif int(userResponse) != prog_ans: # Count Wrong Answers
             if wrong_ans == 9:
-                print(f"\n\033[0mThe correct answer for Item No.\033[34;1m{infMax}\033[0m is \033[32;1m{prog_ans}\033[0m")
+                print(f"\n\033[0mThe correct answer for Item No.\033[34;1m{infMax}\033[0m is \033[32;1m{prog_ans}\033[0m\n\033[31;1m-------------------------------------------- \033[0m")
             elif wrong_ans >= 7 or wrong_ans == 8:
-                print(f"\n\033[0mYou are \033[31;1mstill wrong\033[0m! Think more! \nThe correct answer for Item No.\033[36;1m{infMax}\033[0m is \033[32;1m{prog_ans}\033[0m")
+                print(f"\n\033[0mYou are \033[31;1mstill wrong\033[0m! Think more! \nThe correct answer for Item No.\033[36;1m{infMax}\033[0m is \033[32;1m{prog_ans}\033[0m\n\033[31;1m-------------------------------------------- \033[0m")
             elif wrong_ans >= 4 or wrong_ans == 6:
-                print(f"\n\033[0mYou are \033[31;1mwrong\033[0m! But you can still do it! \nThe correct answer for Item No.\033[36;1m{infMax}\033[0m is \033[32;1m{prog_ans}\033[0m")
+                print(f"\n\033[0mYou are \033[31;1mwrong\033[0m! But you can still do it! \nThe correct answer for Item No.\033[36;1m{infMax}\033[0m is \033[32;1m{prog_ans}\033[0m\n\033[31;1m-------------------------------------------- \033[0m")
             elif wrong_ans >= 0 or wrong_ans == 3:
-                print(f"\n\033[0m\033[31;1mIncorrect 🙁\033[0m\nThe correct answer for Item No.\033[36;1m{infMax}\033[0m is \033[32;1m{prog_ans}\033[0m")
+                print(f"\n\033[0m\033[31;1mIncorrect 🙁\033[0m\nThe correct answer for Item No.\033[36;1m{infMax}\033[0m is \033[32;1m{prog_ans}\033[0m\n\033[31;1m-------------------------------------------- \033[0m")
             wrong_ans += 1
             infMax += 1
     elif userResponse.isalnum() == True: # Fourth Issue (If User Input is Alpha-Numeric)
         """
         TOTAL ITEM QUIZ NOT COUNTED IF ANOTHER INPUT IS ENCODED BY A USER (USING ELIF STATEMENT).
         """
-        print("\033[0mThe program says that you should provide a \033[32;1mnumerical input\033[0m. Please try again. \nThat answer \033[31;1m\x1B[3mwould not\x1B[0m be counted as an \033[32;1m\x1B[3mincrement\x1B[0m of your \033[34;1mtotal item quiz\033[0m.")
+        print("\033[0mThe program says that you should provide a \033[32;1mnumerical input\033[0m. Please try again. \nThat answer \033[31;1m\x1B[3mwould not\x1B[0m be counted as an \033[32;1m\x1B[3mincrement\x1B[0m of your \033[34;1mtotal item quiz\033[0m.\n\033[31;1m-------------------------------------------- \033[0m")
     else:
         """
         TOTAL ITEM QUIZ NOT COUNTED IF ANOTHER INPUT IS ENCODED BY A USER (USING ELIF STATEMENT).
         """
-        print("\033[0mThe program says that \033[32mfloat inputs (with . ,)\033[0m or \033[32mintegers with decimals (with . ,)\033[0m are not recognized in this \033[32;1mMath Quiz\33[0m. Please try again. \nThat answer \033[31;1m\x1B[3mwould not\x1B[0m be counted as an \033[32;1m\x1B[3mincrement\x1B[0m of your \033[34;1mtotal item quiz\033[0m.")
+        print("\033[0mThe program says that \033[32mfloat inputs (with . ,)\033[0m or \033[32mintegers with decimals (with . ,)\033[0m are not recognized in this \033[32;1mMath Quiz\33[0m. Please try again. \nThat answer \033[31;1m\x1B[3mwould not\x1B[0m be counted as an \033[32;1m\x1B[3mincrement\x1B[0m of your \033[34;1mtotal item quiz\033[0m.\n\033[31;1m-------------------------------------------- \033[0m")
 
 # SUMMARY OF SCORES , EVALUATION , AND ADDITIONAL COMMENTS FOR MORE INTERACTIVE RESPONSE.
 if correct_ans >= 10 and wrong_ans == 0:
-    print(f"\n\033[0mThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mYou've got a perfect score!\033[0m\n")
+    print(f"\n\033[0m\033[34;1m-------------------------------------------- \033[0m\nThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mYou've got a perfect score!\033[0m\n\033[34;1m--------------------------------------------\033[0m\n")
 elif correct_ans >= 5 or correct_ans == 9 and wrong_ans >= 1:
-    print(f"\n\033[0mThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mYou still did your best!\033[0m\n")
+    print(f"\n\033[0m\033[34;1m-------------------------------------------- \033[0m\nThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mYou still did your best!\033[0m\n\033[34;1m--------------------------------------------\033[0m\n")
 elif correct_ans >= 1 or correct_ans == 4 and wrong_ans >= 1:
-    print(f"\n\033[0mThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mNice try! But you still need to practice more, okay?\033[0m\n")
+    print(f"\n\033[0m\033[34;1m-------------------------------------------- \033[0m\nThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mNice try! But you still need to practice more, okay?\033[0m\n\033[34;1m--------------------------------------------\033[0m\n")
 elif correct_ans == 0 and wrong_ans >= 0:
-    print(f"\n\033[0mThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mDo not worry, at least you have tried!\033[0m\n")
+    print(f"\n\033[0m\033[34;1m-------------------------------------------- \033[0m\nThe \033[34;1msummary of your grades\033[0m would be: \033[32;1m{correct_ans} / {maxItems}\033[0m.\n\x1B[3mDo not worry, at least you have tried!\033[0m\n\033[34;1m--------------------------------------------\033[0m\n")
